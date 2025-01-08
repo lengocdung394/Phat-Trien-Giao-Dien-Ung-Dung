@@ -25,7 +25,7 @@ if (higherBMI == true) {
 
 //Coding Challenge #3
 
-var scoreD = [98, 106, 110]
+var scoreD = [96, 106, 89]
 var scoreK = [88, 91, 110]
 
 var avgD = (scoreD[0] + scoreD[1] + scoreD[2]) / 3
@@ -45,3 +45,15 @@ var bill = 275
 var tip = (bill >= 50 && bill<=300) ? bill * 0.15 : bill * 0.20
 
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`)
+
+
+// Part 2
+
+// Coding Challenge #1
+
+
+function calcAverage(a, b, c) {
+    return (a + b + c) / 3
+}
+
+var avgD = calcAverage(44, 23, 71)
