@@ -121,8 +121,15 @@ if(higherBMI)
 
 
 
+// // Coding Challenge #4
 
-
+function calcTip(bill) {
+    var tip = (bill >= 50 && bill <= 300) ? bill * 0.15 : bill * 0.20;
+    console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`)
+}
+var bill = [22, 295, 176, 440, 37, 105, 10, 1100, 86,52];
+for(var i = 0; i < bill.length; i++)
+      calcTip(bill[i]);
 
 
 
