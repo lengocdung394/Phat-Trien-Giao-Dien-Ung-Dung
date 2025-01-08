@@ -12,3 +12,15 @@ var higherBMI = BMIM > BMIJ
 
 console.log(BMIM, BMIJ, higherBMI)
 
+
+// Coding Challenge #2
+
+if (higherBMI == true) {
+    console.log(`Mark's BMI (${BMIM}) is higher than John's (${BMIJ})!`)
+} else {
+    console.log(`John's BMI (${BMIJ}) is higher than Mark's (${BMIM})!`)
+}
+
+
+
+
