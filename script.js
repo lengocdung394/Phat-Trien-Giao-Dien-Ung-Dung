@@ -1,4 +1,4 @@
-// Part 1
+                                           // Part 1
 // Coding Challenge #1
 var massM = 78
 var heightM = 1.69
@@ -47,7 +47,7 @@ var tip = (bill >= 50 && bill <= 300) ? bill * 0.15 : bill * 0.20
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`)
 
 
-// Part 2
+                                            // Part 2
 
 // Coding Challenge #1
 
@@ -90,6 +90,18 @@ var avgK = calcAverage(...scoresK);
         console.log('No one wins');
     }
 })(avgD, avgK);
+
+// Coding Challenge #2
+
+(function calcTip(bill) {
+    var tip = (bill >= 50 && bill <= 300 )? bill * 0.15 : bill * 0.20
+    console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`)
+
+})(275);
+
+
+
+
 
 
 
