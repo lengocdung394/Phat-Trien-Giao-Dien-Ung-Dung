@@ -100,6 +100,27 @@ var avgK = calcAverage(...scoresK);
 })(275);
 
 
+// Coding Challenge #3
+
+
+var massM = 78
+var heightM = 1.69
+
+var massJ = 95
+var heightJ = 1.88
+
+function calcBMI(mass, height) {
+    return mass / height ** 2
+}
+
+var BMIM = calcBMI(massM, heightM)
+var BMIJ = calcBMI(massJ, heightJ)
+var higherBMI = BMIM > BMIJ
+if(higherBMI)
+    console.log(`Mark's BMI (${BMIM}) is higher than John's (${BMIJ})!`)
+
+
+
 
 
 
