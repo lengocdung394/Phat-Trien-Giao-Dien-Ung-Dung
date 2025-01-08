@@ -1,3 +1,4 @@
+// Part 1
 // Coding Challenge #1
 var massM = 78
 var heightM = 1.69
@@ -22,5 +23,18 @@ if (higherBMI == true) {
 }
 
 
+//Coding Challenge #3
 
+var scoreD = [98, 106, 110]
+var scoreK = [88, 91, 110]
+
+var avgD = (scoreD[0] + scoreD[1] + scoreD[2]) / 3
+var avgK = (scoreK[0] + scoreK[1] + scoreK[2]) / 3
+
+if (avgD > avgK && avgD >= 100) {
+    console.log(`Dolphins win the trophy with score ${avgD}> ${avgK}`)
+}else if(avgD < avgK && avgK >= 100){
+    console.log(`Koalas win the trophy with score ${avgK}>${avgD}`)
+}else 
+    console.log('No one wins the trophy!')
 
