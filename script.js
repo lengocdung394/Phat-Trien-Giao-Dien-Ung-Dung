@@ -206,6 +206,42 @@ var avg2 = calcAverageHumanAge1([16, 6, 10, 5, 6, 1, 4]);
 console.log(avg1, avg2);
 
 
+// Object Oriented Programming (OOP)
+
+// Coding Challenge #1
+
+// Hàm tạo cho đối tượng Car
+function Car(make, speed) {
+    this.make = make; // Thương hiệu của xe
+    this.speed = speed; // Tốc độ hiện tại (km/h)
+
+    // Phương thức tăng tốc
+    this.accelerate = function() {
+        this.speed += 10; // Tăng tốc độ lên 10 km/h
+        console.log(`${this.make} is going at ${this.speed} km/h`);
+    };
+
+    // Phương thức phanh
+    this.brake = function() {
+        this.speed -= 5; // Giảm tốc độ xuống 5 km/h
+        console.log(`${this.make} is going at ${this.speed} km/h`);
+    };
+}
+
+// Tạo hai đối tượng Car
+const car1 = new Car('BMW', 120);
+const car2 = new Car('Mercedes', 95);
+
+// Thử nghiệm với phương thức accelerate và brake
+car1.accelerate(); // Tăng tốc xe BMW
+car1.accelerate(); // Tăng tốc xe BMW
+car1.brake();      // Phanh xe BMW
+
+car2.accelerate(); // Tăng tốc xe Mercedes
+car2.brake();      // Phanh xe Mercedes
+car2.brake();      // Phanh xe Mercedes
+
+
 
 
 
