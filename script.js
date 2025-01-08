@@ -190,6 +190,23 @@ var avg2 = calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4])
 console.log(avg1, avg2)
 
 
+// Coding Challenge #3
+
+const calcAverageHumanAge1 = (arr) => {
+    const humanAge = arr.map(dogAge => dogAge <= 2 ? 2 * dogAge : 16 + dogAge * 4);
+    const adultDogs = humanAge.filter(age => age >= 18);
+    const avg = adultDogs.length > 0 ? adultDogs.reduce((acc, age) => acc + age, 0) / adultDogs.length : 0; // Tránh chia cho 0
+    return avg;
+};
+
+// Chạy hàm với dữ liệu thử nghiệm
+var avg1 = calcAverageHumanAge1([5, 2, 4, 1, 15, 8, 3]);
+var avg2 = calcAverageHumanAge1([16, 6, 10, 5, 6, 1, 4]);
+
+console.log(avg1, avg2);
+
+
+
 
 
 
