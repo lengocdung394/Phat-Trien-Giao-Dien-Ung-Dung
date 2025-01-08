@@ -147,5 +147,34 @@ var str='';
 console.log(str)
 
 
+//Working With Arrays
+
+// Coding Challenge #1
+
+var arr1 = [3, 5, 2, 12, 7]
+var arr2 = [4, 1, 15, 8, 3]
+
+var arr3 = [9, 16, 6, 8, 3]
+var arr4 = [10, 5, 6, 1, 4]
+
+function checkDogs(arr1, arr2){
+    var arrnew = arr1.slice(2, -2)
+    var arr = arrnew.concat(arr2)
+
+    for(var i= 0; i< arr.length; i++){
+        if(arr[i] >=3){
+           console.log(`Dog number ${i + 1} is an adult, and is ${arr[i]} years old`)
+        }else{
+           console.log(`Dog number ${i + 1} is still a puppy `);
+        }
+    }
+}
+
+checkDogs(arr1, arr2)
+checkDogs(arr3, arr4)
+
+
+
+
 
 
