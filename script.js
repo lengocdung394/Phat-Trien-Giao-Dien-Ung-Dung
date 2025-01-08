@@ -33,16 +33,16 @@ var avgK = (scoreK[0] + scoreK[1] + scoreK[2]) / 3
 
 if (avgD > avgK && avgD >= 100) {
     console.log(`Dolphins win the trophy with score ${avgD}> ${avgK}`)
-}else if(avgD < avgK && avgK >= 100){
+} else if (avgD < avgK && avgK >= 100) {
     console.log(`Koalas win the trophy with score ${avgK}>${avgD}`)
-}else 
+} else
     console.log('No one wins the trophy!')
 
 
 // Coding Challenge #4
 
 var bill = 275
-var tip = (bill >= 50 && bill<=300) ? bill * 0.15 : bill * 0.20
+var tip = (bill >= 50 && bill <= 300) ? bill * 0.15 : bill * 0.20
 
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`)
 
@@ -51,9 +51,47 @@ console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bil
 
 // Coding Challenge #1
 
+// function calcAverage(a, b, c) {
+//     return (a + b + c) / 3
+// }
+
+// var scoresD = [44, 23, 71];
+// var scoresK = [65, 54, 49];
+
+// var avgD = calcAverage(...scoreD)
+// var avgK = calcAverage(...scoreK)
+
+//     (function checkWinner(avgD, avgK) {
+//         if (avgD >= 2 * avgK) {
+//             console.log(`Dolphins win (${avgD} vs. ${avgK})`)
+//         } else if (avgK >= 2 * avgD) {
+//             console.log(`Koalas win (${avgK} vs. ${avgD})`)
+//         } else
+//             console.log('No one wins')
+//     })(avgD, avgK);
 
 function calcAverage(a, b, c) {
-    return (a + b + c) / 3
+    return (a + b + c) / 3;
 }
 
-var avgD = calcAverage(44, 23, 71)
+var scoresD = [44, 23, 71];
+var scoresK = [65, 54, 49];
+
+// Sử dụng toán tử spread để truyền mảng vào hàm
+var avgD = calcAverage(...scoresD);
+var avgK = calcAverage(...scoresK);
+
+(function checkWinner(avgD, avgK) {
+    if (avgD >= 2 * avgK) {
+        console.log(`Dolphins win (${avgD} vs. ${avgK})`);
+    } else if (avgK >= 2 * avgD) {
+        console.log(`Koalas win (${avgK} vs. ${avgD})`);
+    } else {
+        console.log('No one wins');
+    }
+})(avgD, avgK);
+
+
+
+
+
