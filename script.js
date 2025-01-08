@@ -174,6 +174,22 @@ checkDogs(arr1, arr2)
 checkDogs(arr3, arr4)
 
 
+// Coding Challenge #2
+
+
+function calcAverageHumanAge(arr){
+    var humanAge = arr.map(dogAge => dogAge <= 2 ? 2 * dogAge : 16 + dogAge * 4)
+    var adultDogs = humanAge.filter(dogAge => dogAge >= 18)
+    var avg = adultDogs.reduce((acc, age) => acc + age, 0) / adultDogs.length
+    return avg
+}
+
+var avg1 = calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3])
+var avg2 = calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4])
+
+console.log(avg1, avg2)
+
+
 
 
 
