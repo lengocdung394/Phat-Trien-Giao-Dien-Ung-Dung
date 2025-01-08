@@ -133,5 +133,19 @@ for(var i = 0; i < bill.length; i++)
 
 
 
+// Developer Skills & Editor Setup
+
+// Coding Challenge #1
+
+var str='';
+(function printForecast(arr){
+    for(var i = 0; i < arr.length; i++)
+        str += `${arr[i]}°C in ${i + 1} days ... `;
+    return str;
+}) ([17, 21, 23]);
+
+console.log(str)
+
+
 
 
